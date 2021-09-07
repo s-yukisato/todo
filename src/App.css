@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hina Mincho", serif;
+}
+
+.App {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(rgb(204, 140, 247), rgba(0, 0, 0, 0.5)), url(./images/old-textured-brick-wall-background.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+.container {
+    position: relative;
+    min-height: 80vh;
+    width: 60%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+}
+.container header {
+    flex: 1;
+}
+.container form {
+    flex: 1;
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .25rem;
+    margin: .5rem;
+}
+.container .todo-container {
+    flex: 6;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    overflow: hidden;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2));
+    border-radius: 2rem;
+}
+.todo {
+    margin: .5rem;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+
+li {
+    list-style: none;
+}
+
+input {
+    width: 100%;
+    padding: .5rem;
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px #bfc5ec;
+}
+
+button {
+    position: relative;
+    width: 2.5rem;
+    height: 1.5rem;
+    background: linear-gradient(to right bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+    color: white;
+}
